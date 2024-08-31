@@ -1,18 +1,23 @@
 // src/components/Nav.jsx
-import React from 'react';
-import { MdNotificationsNone } from "react-icons/md";
+import React, { useState } from 'react';
+import { MdNotificationsNone, MdMenu } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 
-
-
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   return (
-    <div className='flex justify-end w-full bg-white'>
+    <div className='flex justify-end gap-2 items-center w-full bg-white p-4'>
+      
       <div className='flex gap-2 items-center'>
         <p className='font-semibold text-blue-500 cursor-pointer'>Upgrade To Merchant</p>
         <MdNotificationsNone size={24} className='text-blue-500 cursor-pointer'/>
         <VscAccount size={24} className='text-blue-500 cursor-pointer'/>
+        
       </div>
+      <MdMenu 
+        size={28} 
+        className='text-blue-500 cursor-pointer lg:hidden' 
+        onClick={toggleSidebar} 
+      />
     </div>
   );
 }

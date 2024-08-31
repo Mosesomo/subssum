@@ -9,8 +9,8 @@ import logo from '../assets/logo.png';
 const Layout = () => {
   return (
     <div className='flex w-[100%]'>
-        <div className='fixed h-screen bg-gradient-to-b from-blue-700 to-blue-400  pl-5 pt-5 pb-5'>
-            <div className="bg-white h-full w-64 p-5 text-black rounded-lg shadow-lg">
+        <div className='hidden md:block fixed h-screen bg-gradient-to-b from-blue-700 to-blue-400  pl-5 pt-5 pb-5'>
+            <div className=" bg-white h-full w-64 p-5 text-black rounded-lg shadow-lg">
                 <div className='flex items-center gap-2'>
                     {/*<MdSpaceDashboard size={38} className='mb-10'/>*/}
                     <img src={logo} className='object-fit mb-10'></img>
@@ -60,14 +60,14 @@ const Layout = () => {
             </div>
 
             {/* Transparent Blue Overlay */}
-            <div className='absolute top-0 w-full left-0 h-full bg-gradient-overlay z-20 pointer-events-none'></div>
-            <h2 className='absolute bottom-10 left-5 text-white font-bold text-3xl z-20'>
+            <div className='hidden md:block absolute top-0 w-full left-0 h-screen bg-gradient-overlay z-20 pointer-events-none'></div>
+            <h2 className='hidden md:block absolute bottom-10 left-5 text-white font-bold text-3xl z-20'>
                 The best place to subscribe/buy
             </h2>
         </div>
-        <div className='flex-1 w-full p-5 ml-64'>
+        <div className='md:flex-1 w-full p-5 md:ml-64'>
             <Nav />
-            <div className='flex-1 flex items-center justify-center'>
+            <div className='md:flex-1 flex items-center justify-center'>
                 <LoginForm />
             </div>
         </div>

@@ -11,7 +11,7 @@ const LoginForm = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-[498px] p-6 mt-12">
+      <div className="w-[356px] md:w-[498px] p-6 mt-12">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-600">Log In</h2>
         <button className="w-full flex items-center justify-center bg-white shadow-lg text-gray-700 font-semibold rounded-lg p-2 mb-4 border-[1px]">
           <FcGoogle size={34} className='mr-4' /> Login with Google
