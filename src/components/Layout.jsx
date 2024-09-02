@@ -1,7 +1,6 @@
-import React from 'react';
 import LoginForm from './LoginForm';
 import Nav from './Nav';
-import { MdDashboard, MdElectricBolt, MdOutlineSupportAgent, MdSpaceDashboard } from "react-icons/md";
+import { MdDashboard, MdElectricBolt, MdOutlineSupportAgent} from "react-icons/md";
 import { FaPhoneAlt, FaWifi, FaTv, FaHistory } from "react-icons/fa";
 import { BiChevronDown } from "react-icons/bi";
 import logo from '../assets/logo.png';
@@ -13,8 +12,8 @@ const Layout = () => {
             <div className=" bg-white h-full w-64 p-5 text-black rounded-lg shadow-lg">
                 <div className='flex items-center gap-2'>
                     {/*<MdSpaceDashboard size={38} className='mb-10'/>*/}
-                    <img src={logo} className='object-fit mb-10'></img>
-                    <h1 className="text-xl font-bold mb-10">SUBSUM</h1>
+                    <img src={logo} className='object-fit mb-10 w-[20.75px] h-[30.62px]'></img>
+                    <h1 className="text-xl font-bold mb-10 text-blue-900">SUBSSUM</h1>
                 </div>
                 <ul>
                     <li className="mb-4">

@@ -1,5 +1,4 @@
 // src/components/Sidebar.jsx
-import React from 'react';
 import { MdDashboard, MdElectricBolt, MdOutlineSupportAgent, MdLogout } from "react-icons/md";
 import { FaPhoneAlt, FaWifi, FaTv, FaHistory } from "react-icons/fa";
 import { RiExchangeFundsFill } from "react-icons/ri";

@@ -65,27 +65,27 @@ const TransactionHistory = () => {
                     <table className="min-w-full bg-white">
                         <thead>
                             <tr>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Service</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Amount</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Total Amount</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Status</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Payment Method</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Transaction No</th>
-                                <th className="py-2 text-left text-gray-600 text-center text-[12px] lg:text-normal">Actions</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Service</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Amount</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Total Amount</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Status</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Payment Method</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Transaction No</th>
+                                <th className="py-2 md:text-left text-gray-600  text-[8px] md:text-[14px]">Actions</th>
                             </tr>
                         </thead>
                         <tbody className=''>
                             {transactions.map((transaction) => (
                                 <tr key={transaction.id} className="border-b">
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">{transaction.type}</td>
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">{transaction.amount}</td>
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">{transaction.total_amount}</td>
-                                    <td className={`py-2 text-left text-center text-[11px] lg:text-[14px] ${transaction.status === "Successful" ? "text-green-500" : "text-red-500"}`}>
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">{transaction.type}</td>
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">{transaction.amount}</td>
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">{transaction.total_amount}</td>
+                                    <td className={`py-2 text-left text-[7px] pr-2 md:text-[13px] ${transaction.status === "Successful" ? "text-green-500" : "text-red-500"}`}>
                                         {transaction.status}
                                     </td>
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">{transaction.paymentMethod}</td>
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">{transaction.transactionNo}</td>
-                                    <td className="py-2 text-left text-gray-800 text-center text-[11px] lg:text-[14px]">
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">{transaction.paymentMethod}</td>
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">{transaction.transactionNo}</td>
+                                    <td className="py-2 text-left text-gray-800 text-[7px] pr-2 md:text-[13px]">
                                         <button className="bg-gray-100 text-blue-500 p-1 px-2 rounded-md">open</button>
                                     </td>
                                 </tr>

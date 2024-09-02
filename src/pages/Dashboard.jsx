@@ -15,12 +15,12 @@ const Dashboard = () => {
   return (
     <div className='flex w-[100%]'>
       <Sidebar isOpen={isSidebarOpen} />
-      <div className='flex-1 w-full p-5 lg:ml-64'>
+      <div className='flex-1 w-full p- md:p-5 lg:ml-64'>
         <div className='flex justify-between items-center p-2 w-full'>
           <h2 className="text-xl font-semibold mt-2 lg:w-full text-gray-700">Welcome, Lawal Wahab</h2>
           <Header toggleSidebar={toggleSidebar}/>
         </div>
-        <div className="flex flex-col p-5 md:p-10 bg-white h-screen">
+        <div className="flex flex-col p-3 md:p-10 bg-white h-screen">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="">
               <div className='border-[2px] p-5 rounded-lg flex justify-between w-full'>
@@ -28,7 +28,7 @@ const Dashboard = () => {
                   <h3 className="font-semibold mb-2 text-gray-800">Wallet Balance</h3>
                   <p className="text-2xl font-bold text-gray-800">₦3000</p>
                 </div>
-                <button className="bg-blue-800 text-white py-2 px-4 mt-5 rounded-lg px-6">Fund Wallet</button>
+                <button className="bg-blue-800 text-white py-2 mt-5 rounded-lg px-6">Fund Wallet</button>
               </div>
               <div className="mt-5 border-[2px] p-5 rounded-lg">
                 <h4 className="font-semibold mb-4">Referral</h4>
